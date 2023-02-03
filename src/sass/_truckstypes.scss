@@ -1,0 +1,56 @@
+.truckstypes {
+    min-height: 914px;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__item {
+        position: relative;
+        margin-top: 61px;
+        min-height: 312px;
+        width: 336px;
+        &__title {
+            margin-bottom: 13px;
+            color: #1b62b3;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &__descr {
+            color: #414141;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: justify;
+        }
+        &__btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 111px;
+            height: 26px;
+            border-radius: 0 5px 5px;
+            border: none;
+            background-color: #1b62b3;
+            color: #ffffff;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.5s all;
+
+            &:hover {
+                background-color: #2e7ed9;
+            }
+            &-bottom {
+                bottom: -45px;
+            }
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
+}

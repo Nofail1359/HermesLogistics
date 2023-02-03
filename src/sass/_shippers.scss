@@ -1,0 +1,51 @@
+.shippers {
+    padding-top: 35px;
+    &__descr {
+        margin-top: 30px;
+        color: #414141;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &__subtitle {
+        margin-top: 42px;
+        color: #1b62b3;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__item {
+            img {
+                display: block;
+                margin: 0 auto;
+                height: 135px;
+            }
+            &_descr {
+                margin-top: 26px;
+                color: #414141;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__txtwrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        &_item {
+            width: 465px;
+            color: #414141;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}

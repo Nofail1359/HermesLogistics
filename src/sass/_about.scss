@@ -1,0 +1,42 @@
+.about {
+    padding: 48px 56px 49px 53px;
+    display: flex;
+    justify-content: space-around;
+    &__title,
+    &__descr {
+        color: #1b5da8;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &__subtitle {
+        font-weight: 400;
+        line-height: 28px;
+        margin-top: 19px;
+        font-size: 14px;
+    }
+    &__descr {
+        margin-top: 32px;
+    }
+    &__subdescr {
+        font-size: 14px;
+        max-width: 540px;
+        text-align: justify;
+        span {
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+    &__img {
+        width: 411px;
+        height: 301px;
+        display: inline-block;
+    }
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

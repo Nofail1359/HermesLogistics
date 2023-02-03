@@ -1,0 +1,86 @@
+.header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0 20px 0;
+    .hamburger{
+        display: none;
+    }
+    &__logo {
+        width: 167px;
+        height: 42px;
+        img {
+            width: 100%;
+        }
+    }
+    &__contacts {
+        width: 313px;
+        height: 43px;
+        color: $main-color;
+        font-weight: 400;
+    }
+    &__date {
+        display: block;
+        width: 114px;
+        height: 38px;
+        color: #8a8888;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__search {
+        width: 259px;
+        height: 34px;
+        img {
+            width: 21px;
+            height: 21px;
+            margin-right: 21px;
+            margin-top: -2px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &__input {
+        width: 212px;
+        height: 34px;
+        border-radius: 3px;
+        background-color: #f3f3f3;
+    }
+}
+.main {
+    min-height: 518px;
+    background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+    .header__logo {
+        display: none;
+    }
+    .header__contacts {
+        display: none;
+    }
+    &__wings {
+        display: flex;
+        padding: 285px 0 144px 0;
+        flex-direction: column;
+        align-items: flex-end;
+        .request{
+            display: none;
+        }
+    }
+    &__descr {
+        position: absolute;
+        margin-top: 35px;
+        margin-right: 180px;
+        color: #e9e9e9;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 53px;
+        text-align: justifyLeft;
+        text-transform: uppercase;
+        span {
+            letter-spacing: -1.79px;
+        }
+    }
+}

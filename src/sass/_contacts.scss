@@ -1,0 +1,83 @@
+.contacts {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__item {
+            margin-top: 38px;
+            &_title {
+                color: #1b62b3;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &_box {
+                &_img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+                &_title {
+                    margin-top: 18px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #1b62b3;
+                }
+                &_descr {
+                    color: #373737;
+                    font-family: Lexend;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+                a {
+                    display: block;
+                    color: #373737;
+                    font-family: Lexend;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                &_phone {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+    &_links {
+        list-style-type: none;
+        a {
+            color: #373737;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        li {
+            margin-top: 10px;
+        }
+    }
+    &_social {
+        margin-left: 55px;
+        margin-top: 47px;
+        img {
+            max-width: 55px;
+            max-height: 55px;
+            margin-right: 10px;
+        }
+    }
+    &_sales {
+        margin-left: 50px;
+        margin-top: 27px;
+        color: #373737;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

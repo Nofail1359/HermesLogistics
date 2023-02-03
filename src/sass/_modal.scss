@@ -1,0 +1,136 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 450px;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+    padding: 20px 15px 20px 15px;
+    .error {
+        border: 1px solid red;
+        font-size: 14.2px;
+        text-align: left;
+    }
+    label.error {
+        border: none;
+    }
+    &__subtitle {
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 53px;
+        span {
+            color: #1b62b3;
+        }
+    }
+    &__descr {
+        max-width: 420px;
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 100;
+        color: grey;
+    }
+    &__submit {
+        width: 207px;
+        height: 46px;
+        border-radius: 5px;
+        background-color: #1b62b3;
+        border: none;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__close {
+        position: absolute;
+        top: 0px;
+        right: -40px;
+        font-size: 50px;
+        line-height: 21px;
+        color: #1b62b3;
+        cursor: pointer;
+    }
+    &__privacy {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        span {
+            margin-top: -13px;
+            margin-left: -18px;
+        }
+        input {
+            cursor: pointer;
+        }
+    }
+}
+
+.feed-form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input,
+    textarea {
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+
+    }
+    .form__input {
+        transition: box-shadow 0.3s;
+    }
+    .form__input:focus {
+        box-shadow: 0 0 15px #1b62b3;
+    }
+    .form__input.error {
+        box-shadow: 0 0 15px red;
+    }
+    textarea {
+        height: 61px;
+    }
+}
+
+
+
+form * {
+    outline: none;
+}
+
+
+.request {
+    width: 230px;
+    height: 45px;
+    border-radius: 13px;
+    background-color: #1b62b3;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.overlay,
+.modal {
+    display: none;
+}
+.overlay{
+    z-index: 0;
+}
+.modal{
+    z-index: 1;
+}
